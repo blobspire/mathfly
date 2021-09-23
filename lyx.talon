@@ -332,6 +332,9 @@ mark floor:
 oiler:
     insert('e^i')
 
+oilers:
+    insert('Euler\'s')
+
 
 
 #useful commands when writing pseudocode in lyx
