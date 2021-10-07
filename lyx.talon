@@ -1,5 +1,6 @@
 app: lyx 
 -
+#use 'alt' for option key on mac
 
 #Play around with delays to make them as low as possible, mostly needed for filling matrices
 settings():
@@ -102,11 +103,37 @@ implies:
     insert("\Longrightarrow")
     key(space)
 
+root:
+    key(ctrl-m r)
+    
+cube root:
+    key(ctrl-m r)
+    key(3 right)
+
+new line:
+    key(cmd-enter down)
+#adds new line to display mode
+
+add note <phrase>:
+    insert("{")
+    insert(user.formatted_text(phrase, "dubstring,kebab"))
+    insert("}")
+
+(proportional to | is proportional to | proportional): 
+    insert("\propto")
+    key(space)
+
+natural log:
+    key(l n )
+    key(ctrl-m |)
+#types "ln", then triggers "absolute" funct in LyX
+    
+
 negative: key(-)
 point: key(.)
 # for decimals. saying "period" is cumbersome
 fraction: key(ctrl-m f)
-over: key(shift-left ctrl-m f down) 
+over: key(alt-shift-left ctrl-m f down) 
 # 'over' selects "phrase" to left, initiates fraction, selection becomes numerator
 (super script | to the power | to the power of): key(^)
 sub script: key(_)
@@ -115,7 +142,7 @@ cubed: key(^ 3 right)
 inverse: key(^ - 1 right)
 (prekris | parens | brackets | parents): key(ctrl-m ()
 (brax | square brackets): key(ctrl-m [)
-curly [brackets]: key(ctrl-m {)
+curly [brackets | braces]: key(ctrl-m {)
 absolute: key(ctrl-m |)
 angles: key(ctrl-m <)
 add matrix row: key(ctrl-m w i)
@@ -331,6 +358,9 @@ mark floor:
 
 oiler:
     insert('e^i')
+
+oilers:
+    insert('Euler\'s')
 
 
 
