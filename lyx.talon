@@ -110,6 +110,17 @@ cube root:
     key(ctrl-m r)
     key(3 right)
 
+(element | element of):
+    insert("\in")
+    key(space)
+
+therefore:
+    insert("\\therefore")
+    key(space)
+
+
+
+
 new line:
     key(cmd-enter down)
 #adds new line to display mode
@@ -127,6 +138,16 @@ natural log:
     key(l n )
     key(ctrl-m |)
 #types "ln", then triggers "absolute" funct in LyX
+
+#when in display mode, LyX moves the left side of the eq to the left box. this makes navigation more cumbersome.
+#i will add a command that moves the entire first line into the right box to streamline future lines.
+first line:
+    key(cmd-enter down)
+    key(cmd-a)
+    key(cmd-x)
+    key(right)
+    key(cmd-v)
+    key(down)
     
 
 negative: key(-)
@@ -135,7 +156,7 @@ point: key(.)
 fraction: key(ctrl-m f)
 over: key(alt-shift-left ctrl-m f down) 
 # 'over' selects "phrase" to left, initiates fraction, selection becomes numerator
-(super script | to the power | to the power of): key(^)
+(super script | to the | to the power | to the power of): key(^)
 sub script: key(_)
 squared: key(^ 2 right)
 cubed: key(^ 3 right)
