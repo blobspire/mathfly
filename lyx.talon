@@ -1,4 +1,6 @@
 app: lyx 
+os: mac 
+#this has been customized for macOS. I should port over the original windows version and add os tag. This way this repo will work with both out of the box.
 -
 #use 'alt' for option key on mac
 
@@ -118,12 +120,17 @@ therefore:
     insert("\\therefore")
     key(space)
 
+cancel:
+    insert("\\cancel")
+    key(space)
 
 
-
-new line:
+slap:
     key(cmd-enter down)
 #adds new line to display mode
+
+
+
 
 add note <phrase>:
     insert("{")
