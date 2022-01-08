@@ -103,7 +103,7 @@ ctx.lists["user.tex_commands"] = {
     "title": "title",
     "use theme": "usetheme",
     # Accents
-    "grave [accent]": "`",
+#    "grave [accent]": "`", #comment out bc activates from 'go right'
     "acute [accent]": "'",
     "dot [accent]": ".",
     "breve [accent]": "u",
