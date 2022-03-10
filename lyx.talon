@@ -101,10 +101,6 @@ justify equal:
     insert("\overset =")
     key(up)
 
-implies: 
-    insert("\Longrightarrow")
-    key(space)
-
 root:
     key(ctrl-m r)
     
@@ -133,9 +129,9 @@ slap:
 
 
 add note <phrase>:
-    insert("{")
+    insert("[[")
     insert(user.formatted_text(phrase, "dubstring,kebab"))
-    insert("}")
+    insert("]]")
 
 (proportional to | is proportional to | proportional): 
     insert("\propto")
