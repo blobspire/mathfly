@@ -1,5 +1,6 @@
 
 app: lyx
+os: windows
 -
 push dot:
     key(end)
