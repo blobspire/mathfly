@@ -51,7 +51,7 @@ symbols = {
     # "argument": "arg",
     "maximum": "max",
     "minimum": "min",
-    "modulus": "bmod",
+    # "modulus": "bmod",
     "infimum": "inf",
     "supremum": "sup",
     # relations
